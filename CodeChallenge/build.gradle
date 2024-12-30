@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.4.0'
+    id 'io.spring.dependency-management' version '1.1.6'
+    id 'com.netflix.dgs.codegen' version '6.2.1'
+    id 'org.hibernate.orm' version '6.6.2.Final'
+    id 'org.graalvm.buildtools.native' version '0.10.3'
+}
+
+group = 'com.mc4'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url 'https://mc4-767586246561.d.codeartifact.us-east-1.amazonaws.com/maven/Commons/'
+        credentials {
+            username "aws"
+            password "eyJ2ZXIiOjEsImlzdSI6MTczNTU3MDQ3NCwiZW5jIjoiQTEyOEdDTSIsInRhZyI6ImhOcEZHWm5ZWThuNzh6Nkt5bGdOMkEiLCJleHAiOjE3MzU2MTM2NzQsImFsZyI6IkExMjhHQ01LVyIsIml2IjoicUtpUkJzWXRTQnBIcHVWVyJ9.lf7mRgluS0p7F_PxIMfFDg.taiM-d3CxNSXlUzG.Gw5ZiTaeiE3xY1zhUYDjA_9JiskGfbz7O1wcsIgj1sJRK1OUxXpWn4wp9fb6P8r2oZOjKk1nucrR2_d9U0zpcPMBuCrx_KSqf2KnkF6d_JBdaUmPIJce7sxWXOgHRhHBARvOxxSEXE5Oo1dh3yXfaBIhmP0a3-zxhJAhtIpIr-Xhu9qlQ7aMMkfp6rUCfagoZLgAjU2m2w2h5ebM1F_S3JtLQGHWfiV6YVHScznXfIWRxJ40VG7_gaL3T0eGPvq61wwGZ8XyAV4rpIcuQd1jBaB1C1fdI7d3kyAKKgeNdNXunbYt3hy2lyFN7Et4TlCetwrS9QYHlzUzCoJjipJeD2nSbu21KDBi_0hgfcK_cMxem3R1mT8xtS-3S51DeHQvzyGUI6tdKWFFMaAG0zGr-b0alrHyuV_vJU2Z_4cWlO63NfRIrxDCpAaA4jGI3MzN83kW3V80TaxefjO3oO_ipartN3uF_KghSEjceVqY1KQ-_yI3IkwuaKV7aNxwOoMq9SGXUrwZinzKecDtc7cMzqL4WHRxWnLfYNh2RjyFZPNtZOcGLiaQitxpiCxlNqGLbMT0z8Q1Qo9xC5Ym_YgQZSLzdLOVMAGEerqB9ezx-B24eUR7hvAn3aiwAH3-QtevuQ8bln2A53i9jaPMxxNfa63ZKRHaUgrBvJ_H6X3evz3M4Y6v7Ejk1IaEAPQsOmG0lbjuNlTmO1pJ3XjT_l-5-1sZ1Es-fmTut-hVLALuviCPrYKyN9wzLQbdMp8wvux8wRBA4_oAP2cjI0RwibO0bwIn8cfIUMwSOIpLDCJIK7uYWLPg0ZzAqzqFwNVashzcYCVMpXSYtBXhEFbFmVhLMEyqbvw6VEVEMFAFgvio-X3KnUL_FNvY1Zpm-t8AkRjmBY1WBTNQ0pejyJQq_AlHN0s33tFIbu1iXaSMW3NqcUSluGewgDj5ysbuWeY_Zz4he2To3OpqjH95OwiXzyDlZ9y9WZKnPVnEO6IK4msj_-M.P9X4gi4R-sN0ht0xAyZn8A"
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.mc4.commons.base:commons-base-jpa:1.0.0-SNAPSHOT'
+    implementation 'org.modelmapper:modelmapper:3.2.2'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'com.h2database:h2'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+generateJava {
+    schemaPaths = ["${projectDir}/src/main/resources/graphql-client"]
+    packageName = 'com.mc4.challenge.codegen'
+    generateClient = true
+}
+
+hibernate {
+    enhancement {
+        enableAssociationManagement = true
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
