@@ -9,7 +9,7 @@ import java.util.Date;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.domain.services.model : CagegoryModel
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.domain.services.model : PriceModel
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

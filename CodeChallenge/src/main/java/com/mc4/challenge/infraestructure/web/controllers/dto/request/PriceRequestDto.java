@@ -13,7 +13,7 @@ import java.util.Date;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.infraestructure.web.controllers.dto.request : CategoryRequest
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.infraestructure.web.controllers.dto.request : PriceRequest
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

@@ -7,7 +7,7 @@ import com.mc4.challenge.infraestructure.persistence.entities.Price;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.infraestructure.persistence.repositories : CategoryRepository
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.infraestructure.persistence.repositories : PriceRepository
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

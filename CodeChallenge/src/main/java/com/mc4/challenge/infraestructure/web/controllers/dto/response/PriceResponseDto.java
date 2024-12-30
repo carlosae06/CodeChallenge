@@ -10,7 +10,7 @@ import java.util.Date;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.infraestructure.web.controllers.dto.response : CategoryResponse
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.infraestructure.web.controllers.dto.response : PriceResponse
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

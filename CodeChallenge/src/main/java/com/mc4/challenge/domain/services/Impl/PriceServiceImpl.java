@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.domain.services.Impl : CategoryServiceImpl
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.domain.services.Impl : PriceServiceImpl
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

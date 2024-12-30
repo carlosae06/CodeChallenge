@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.application.usecases.Impl : CategoryCrudUseCaseImpl
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.application.usecases.Impl : PriceCrudUseCaseImpl
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

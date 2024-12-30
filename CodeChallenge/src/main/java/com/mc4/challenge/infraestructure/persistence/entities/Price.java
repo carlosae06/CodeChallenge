@@ -11,7 +11,7 @@ import java.util.Date;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.infraestructure.persistence.entities : Category
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.infraestructure.persistence.entities : Price
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

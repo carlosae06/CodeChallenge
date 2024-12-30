@@ -7,7 +7,7 @@ import com.mc4.challenge.domain.services.model.PriceModel;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.application.usecases : CategoryCrudUseCase
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.application.usecases : PriceCrudUseCase
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

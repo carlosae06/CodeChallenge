@@ -7,7 +7,7 @@ import com.mc4.challenge.domain.services.model.PriceModel;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.domain.services : CategoryService
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.domain.services : PriceService
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*

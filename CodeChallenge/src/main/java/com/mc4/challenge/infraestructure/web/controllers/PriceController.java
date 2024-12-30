@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * ------------------------------------------------------------------------*
  * Información General
  * ------------------------------------------------------------------------*
- * Código de Aplicación: Trainig : com.mc4.trainig.infraestructure.web.controllers : CategoryController
+ * Código de Aplicación: CodeChallenge : com.mc4.challenge.infraestructure.web.controllers : PriceController
  * Descripción : (Poner la descripción)
  * Author Prog.: Carlos Augusto Alegre E.
  * -------------------------------------------------------------------------*
